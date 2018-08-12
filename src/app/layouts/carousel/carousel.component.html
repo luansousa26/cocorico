@@ -1,21 +1,21 @@
 <div class="col-md-12 col-sm-12">
-  <ngb-carousel *ngIf="images">
+  <ngb-carousel *ngIf="itensCarousel">
     <ng-template ngbSlide>
-      <img [src]="images[0]" alt="Random first slide">
+      <img [src]="itensCarousel[0].imagemItem" alt="Random first slide">
       <div class="carousel-caption">
         <h3>S.O.S Gatinhos</h3>
         <p>Desde 2001 ajudando gatinhos.</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
-      <img [src]="images[1]" alt="Random second slide">
+      <img [src]="itensCarousel[1].imagemItem" alt="Random second slide">
       <div class="carousel-caption">
         <h3>texto 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
-      <img [src]="images[2]" alt="Random third slide">
+      <img [src]="itensCarousel[2].imagemItem" alt="Random third slide">
       <div class="carousel-caption">
         <h3>texto 3</h3>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
