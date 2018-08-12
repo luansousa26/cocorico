@@ -2,7 +2,7 @@
 
 ## Tecnologias:
 
-### Angular 6.
+### Angular 6. :angular:
 ### Angular Material.
 ### NgBootstrap.
 ### Bootstrap.
