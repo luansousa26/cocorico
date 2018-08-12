@@ -1,3 +1,11 @@
 :host /deep/ .mat-tab-body-content{
     display: none !important;
 }
+.imagem-personagens{
+    width: 50%;
+}
+@media only screen and (max-width: 600px){
+    .imagem-personagens {
+        width: 15%;
+    }
+}

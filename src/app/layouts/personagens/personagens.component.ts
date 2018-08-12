@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonagensComponent implements OnInit {
 
+  personagens: any[] = [];
   constructor() { }
 
   ngOnInit() {
+    this.personagens = [
+      {nomePersonagem: 'Alípio ', descricaoPersonagem: 'Cavalo Alípio', imagemPersonagem: './assets/personagens/alipio.jpg'},
+    ]
   }
 
 }
