@@ -1,4 +1,4 @@
-# Cocorico ![logo-cocorico](https://user-images.githubusercontent.com/33549496/44005384-f9788f46-9e48-11e8-978c-99cfb5fd9444.png)
+![logo-cocorico](https://user-images.githubusercontent.com/33549496/44005384-f9788f46-9e48-11e8-978c-99cfb5fd9444.png)
 
 
 ## Tecnologias:
