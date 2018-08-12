@@ -1,9 +1,8 @@
 <mat-tab-group>
-  <mat-tab>
-    <ng-template *ngFor="let personagem of personagens" mat-tab-label>
+  <mat-tab *ngFor="let personagem of personagens">
+    <ng-template mat-tab-label>
       <img class="imagem-personagens" src="{{personagem.imagemPersonagem}}">
       {{personagem.nomePersonagem}}
     </ng-template>
   </mat-tab>
- 
 </mat-tab-group>

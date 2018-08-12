@@ -12,7 +12,9 @@ export class PersonagensComponent implements OnInit {
 
   ngOnInit() {
     this.personagens = [
-      {nomePersonagem: 'Alípio ', descricaoPersonagem: 'Cavalo Alípio', imagemPersonagem: './assets/personagens/alipio.jpg'},
+      {nomePersonagem: 'Alípio ', descricaoPersonagem: 'Cavalo Alípio', imagemPersonagem: './assets/personagens/alipio2.jpg'},
+      {nomePersonagem: 'Júlio ', descricaoPersonagem: 'Júlio', imagemPersonagem: './assets/personagens/julio2.jpg'},
+      {nomePersonagem: 'Caco ', descricaoPersonagem: 'Júlio', imagemPersonagem: './assets/personagens/caco.jpg'},
     ]
   }
 
