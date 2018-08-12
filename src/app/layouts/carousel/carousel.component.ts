@@ -13,10 +13,10 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit() {
     this.itensCarousel = [
-      { nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/cat.jpg' },
-      { nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/cat2.jpg' },
-      { nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/cat3.jpg' },
-      { nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/cat4.jpg' }
+      {nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/carousel/cocorico1.jpg'},
+      {nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/carousel/cocorico2.jpg'},
+      {nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/carousel/cocorico3.jpg'},
+      {nomeItem: 'Imagem ', descricaoItem: 'Descrição', imagemItem: './assets/carousel/cocorico4.jpg'}
     ]
   }
 
