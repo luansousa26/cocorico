@@ -2,8 +2,8 @@
 
 ## Tecnologias:
 
-### Angular 6. :angular:
-### Angular Material.
+### Angular 6. :bird:
+### Angular Material. :rat:
 ### NgBootstrap.
 ### Bootstrap.
 
