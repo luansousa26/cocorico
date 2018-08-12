@@ -3,8 +3,10 @@
     <ng-template *ngFor="let itens of itensCarousel" ngbSlide>
       <img [src]="itens.imagemItem" alt="Random first slide">
       <div class="carousel-caption">
-        <h3>{{itens.nomeItem}}</h3>
-        <p>{{itens.descricaoItem}}</p>
+        <div class="texto">
+          <h3>{{itens.nomeItem}}</h3>
+          <p>{{itens.descricaoItem}}</p>
+        </div>
       </div>
     </ng-template>
   </ngb-carousel>
