@@ -1,6 +1,12 @@
 :host /deep/ .mat-tab-body-content{
     display: none !important;
 }
+:host /deep/ .mat-tab-label{
+    opacity: 1;
+}
+:host /deep/ .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background-color: #ffc107;
+}
 .imagem-personagens{
     width: 50%;
 }
@@ -13,7 +19,9 @@
     margin-left: 10px;
     color: #FFC107;;
     font-weight: bold;
+    margin-right: 18px;
     text-shadow: 0 0 0.1px rgb(7, 7, 7);
+    font-family: Marker Felt, fantasy !important;
 }
 .tab{
     background-image: url('../../../assets/madeira.jpg');
