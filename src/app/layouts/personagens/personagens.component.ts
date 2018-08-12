@@ -25,6 +25,10 @@ export class PersonagensComponent implements OnInit {
       {nomePersonagem: 'Dito e Feito ', descricaoPersonagem: 'Dito e Feito', imagemPersonagem: './assets/personagens/ditoefeito.jpg'},
       {nomePersonagem: 'Avô e Avó ', descricaoPersonagem: 'Avô e Avó', imagemPersonagem: './assets/personagens/avoeavo.jpg'},
       {nomePersonagem: 'João', descricaoPersonagem: 'João', imagemPersonagem: './assets/personagens/joao.jpg'},
+      {nomePersonagem: 'Pata Vina', descricaoPersonagem: 'Pata Vina', imagemPersonagem: './assets/personagens/pata-vina.jpg'},
+      {nomePersonagem: 'Pato Torquato', descricaoPersonagem: 'Pato Torquato', imagemPersonagem: './assets/personagens/pato-torquato.jpg'},
+      {nomePersonagem: 'Rodolfo', descricaoPersonagem: 'Rodolfo', imagemPersonagem: './assets/personagens/rodolfo.jpg'},
+      {nomePersonagem: 'Sapo Martelo', descricaoPersonagem: 'Sapo Martelo', imagemPersonagem: './assets/personagens/sapo-martelo.jpg'}
     ]
   }
 

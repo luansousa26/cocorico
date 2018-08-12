@@ -2,7 +2,9 @@
   <mat-tab *ngFor="let personagem of personagens">
     <ng-template mat-tab-label>
       <img class="imagem-personagens" src="{{personagem.imagemPersonagem}}">
-      {{personagem.nomePersonagem}}
+      <div class="nomePersonagem">
+        <span>{{personagem.nomePersonagem}}</span>
+      </div>
     </ng-template>
   </mat-tab>
 </mat-tab-group>
