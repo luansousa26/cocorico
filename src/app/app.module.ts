@@ -7,13 +7,15 @@ import { MaterialModule } from './material/material.module';
 import { FooterComponent } from './layouts/footer/footer.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './layouts/carousel/carousel.component';
+import { PersonagensComponent } from './layouts/personagens/personagens.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    PersonagensComponent
   ],
   imports: [
     BrowserModule,
