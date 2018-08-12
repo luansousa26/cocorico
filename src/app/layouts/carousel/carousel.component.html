@@ -1,24 +1,10 @@
 <div class="col-md-12 col-sm-12">
   <ngb-carousel *ngIf="itensCarousel">
-    <ng-template ngbSlide>
-      <img [src]="itensCarousel[0].imagemItem" alt="Random first slide">
+    <ng-template *ngFor="let itens of itensCarousel" ngbSlide>
+      <img [src]="itens.imagemItem" alt="Random first slide">
       <div class="carousel-caption">
-        <h3>S.O.S Gatinhos</h3>
-        <p>Desde 2001 ajudando gatinhos.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <img [src]="itensCarousel[1].imagemItem" alt="Random second slide">
-      <div class="carousel-caption">
-        <h3>texto 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <img [src]="itensCarousel[2].imagemItem" alt="Random third slide">
-      <div class="carousel-caption">
-        <h3>texto 3</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h3>{{itens.nomeItem}}</h3>
+        <p>{{itens.descricaoItem}}</p>
       </div>
     </ng-template>
   </ngb-carousel>
