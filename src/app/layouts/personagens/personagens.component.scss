@@ -10,6 +10,7 @@
 .imagem-personagens{
     width: 50%;
     border-radius: 60%;
+    cursor:pointer;
 }
 @media only screen and (max-width: 600px){
     .imagem-personagens {
@@ -18,11 +19,12 @@
 }
 .nomePersonagem{
     margin-left: 10px;
-    color: #FFC107;;
+    color: #212529;
     font-weight: bold;
     margin-right: 18px;
-    text-shadow: 0 0 0.1px rgb(7, 7, 7);
+    text-shadow: 0 0 5px #f8f9faad;
     font-family: Marker Felt, fantasy !important;
+    text-transform: uppercase;
 }
 .tab{
     background-image: url('../../../assets/madeira.jpg');
