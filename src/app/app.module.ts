@@ -8,6 +8,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './layouts/carousel/carousel.component';
 import { PersonagensComponent } from './layouts/personagens/personagens.component';
+import { NoticiasComponent } from './layouts/noticias/noticias.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PersonagensComponent } from './layouts/personagens/personagens.componen
     NavbarComponent,
     FooterComponent,
     CarouselComponent,
-    PersonagensComponent
+    PersonagensComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,
