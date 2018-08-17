@@ -9,6 +9,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './layouts/carousel/carousel.component';
 import { PersonagensComponent } from './layouts/personagens/personagens.component';
 import { NoticiasComponent } from './layouts/noticias/noticias.component';
+import { DetalhadoComponent } from './layouts/personagens/detalhado/detalhado.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NoticiasComponent } from './layouts/noticias/noticias.component';
     FooterComponent,
     CarouselComponent,
     PersonagensComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    DetalhadoComponent
   ],
   imports: [
     BrowserModule,
