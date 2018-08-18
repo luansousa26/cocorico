@@ -47,6 +47,30 @@ export class VideosComponent implements OnInit {
         id: 7, titulo: 'Férias de verão', descricao: 'Férias de verão. Nada para fazer e o dia todo para brincar. Júlio e os amigos inventam várias brincadeiras e Júlio ensina um jogo que aprendeu na escola com músicas tradicionais do nosso folclore.',
         youtube: 'raW5KC97SbY'
       },
+      { // tslint:disable-next-line:max-line-length
+        id: 8, titulo: 'Sonhos', descricao: 'Júlio tem um sonho estranho e conta para a turma do paiol. Todos passam a conversar sobre seus sonhos e cada um conta os seus, que são dramatizados.',
+        youtube: 'KKkZHWFe6LY'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 9, titulo: 'Sumiço do diário', descricao: 'Júlio perdeu seu diário e a turma da fazenda fez uma retrospectiva dos eventos a partir da última vez que viram o diário.',
+        youtube: 'pXb2X9gDzII'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 10, titulo: 'Apareceu o Aparício', descricao: 'Júlio recebe a visita do amigo Aparício, que tem medo de andar a cavalo. Mas com ajuda do Alípio ele perde o medo, mas Alípio é que, por sua vez, fica com medo de sair da fazenda.',
+        youtube: 'r5khCTgV55s'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 11, titulo: 'Cocoricócegas', descricao: 'Toquinho não ri de nenhuma piada. Por isso, Júlio e Lilica resolvem fazer cócegas para que ele dê risada, mas Toquinho fica muito bravo com as cócegas.',
+        youtube: 'V_8OT7wewoA'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 12, titulo: 'Já pra cama', descricao: 'Júlio não gosta da ideia de ter hora para dormir. No paiol, Lilica também quer brincar até mais tarde. E aí um dia, os dois têm a chance de brincar até a hora que querem. No dia seguinte, ficam exaustos e entendem que precisam descansar bastante durante a noite para aguentar a correria do dia.',
+        youtube: 'Y2YJw5_fW6w'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 13, titulo: 'Terra molhada', descricao: 'Chove lá fora e no paiol as galinhas tentam dormir. Quando amanhece Júlio e Lilica estão felizes, porque o dia está lindo. Lola e Zazá nem tanto, porque as roupas do varal estão com manchas.Júlio começa a investigação e dá uma solução para o caso.',
+        youtube: 'vFZPysQo0zU'
+      },
     ];
   }
 
