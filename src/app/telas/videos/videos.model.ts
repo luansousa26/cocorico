@@ -3,4 +3,5 @@ export class Videos {
         titulo?: String;
         descricao?: String;
         youtube?: String;
+        icone?: String;
 }
