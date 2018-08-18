@@ -71,6 +71,34 @@ export class VideosComponent implements OnInit {
         id: 13, titulo: 'Terra molhada', descricao: 'Chove lá fora e no paiol as galinhas tentam dormir. Quando amanhece Júlio e Lilica estão felizes, porque o dia está lindo. Lola e Zazá nem tanto, porque as roupas do varal estão com manchas.Júlio começa a investigação e dá uma solução para o caso.',
         youtube: 'vFZPysQo0zU'
       },
+      { // tslint:disable-next-line:max-line-length
+        id: 14, titulo: 'O acampamento', descricao: 'Júlio e Oriba acampam no quintal. Oriba conta uma história e Dito e Feito resolvem pregar um susto neles, e acabam entrando para a história.',
+        youtube: 'oMElNCpr2sk'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 15, titulo: 'Doença e vacina', descricao: 'Júlio fica sabendo que Astolfinho está feliz porque vai tomar vacina. Ele fica admirado porque aprendeu com o porquinho que dia de vacinação é dia de festa! Pois é ,todos os dias a turminha aprende muitas coisas novas no paiol. Por exemplo, Lilica e Tuquinho aprenderam brincar de "quente ou frio".',
+        youtube: 'dF5XBTawwIo'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 16, titulo: 'Visão', descricao: 'Quando Júlio chega no paiol, ele pergunta se a Zazá viu os seus amigos. Ela disse que não viu ninguém porque perdeu os óculos. Logo hoje que o nosso amigo Júlio quer mostrar o auto-retrato que ele acaba de fazer! Aliás, parece que todos estão com problemas de visão no paiol. O pior é que ninguém dá atenção para o desenho do Júlio. Mas felizmente a pequena Lilica chega e tudo se resolve.',
+        youtube: '9KmqUK7Ru5Y'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 17, titulo: 'Vaca', descricao: 'Enquanto brincam de caminhãozinho, Júlio e Oriba pensam ser caminhoneiros de verdade. Oriba encontrou o caminhãozinho no paiol, mas ele é do Caco. Depois da escola, o Júlio brinca um pouco de adivinhar com seus amiguinhos e sai bem rápido para não perder seu programa favorito na TV.',
+        youtube: 'YWhNfscegU8'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 18, titulo: 'Diferenças', descricao: 'Hoje a bicharada vai conhecer um amigão do Júlio. O nome dele é Mauro e ele também vai se divertir muito com os bichos da fazenda Cocoricó. Durante as brincadeiras, nossa turminha fica sabendo porque Mauro usa uma bengala para caminhar e porque ele escreve com uma caneta diferente num caderno também diferente.',
+        youtube: 'Q8JDIzkc5hQ'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 19, titulo: 'E se...', descricao: 'Caco chega no paiol logo cedo e não encontra ninguém. O estranho é que algumas vozes começam a desafiar o pequeno papagaio. Felizmente, o Júlio chega e juntos eles descobrem que está acontecendo uma revolta de frutas. Lola preparou bolinhos cheirosos para as crianças. Ela e Zazá pensam que o cheiro vai atrair as crianças para o paiol, mas quem aparece é o Dito e Feito... Adivinhe só o que acontece!',
+        youtube: 'dMGLS996e70'
+      },
+      { // tslint:disable-next-line:max-line-length
+        id: 20, titulo: 'Medo do escuro', descricao: 'Lilica, Caco e Lola resolvem ficar acampados no quintal. Quando a noite chega eles percebem que acamparam numa noite sem lua. Com tanta escuridão eles têm medo e nem conseguem curtir o acampamento, mas Lola encontra a solução...',
+        youtube: 'F5pNWvTgFlI'
+      },
     ];
   }
 
