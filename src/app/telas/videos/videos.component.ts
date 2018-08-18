@@ -11,7 +11,7 @@ export class VideosComponent implements OnInit {
 
   videos: Videos[] = [];
   videosFiltrados: Videos[] = [];
-  episodioAtual: String;
+  episodioAtual: String = '';
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -102,18 +102,25 @@ export class VideosComponent implements OnInit {
         youtube: 'F5pNWvTgFlI', icone: './assets/personagens/lilica.jpg'
       },
     ];
+    this.videosFiltrados = JSON.parse(JSON.stringify(this.videos));
   }
 
   corrigirUrlYoutube(video) {
     return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.youtube}?ecver=2`);
   }
   filtro() {
+    this.videosFiltrados = JSON.parse(JSON.stringify(this.videos));
     this.videosFiltrados = this.filtrar(this.videos);
   }
   filtrar(values) {
     return values.filter(episodio => episodio.titulo.toLowerCase().includes(this.episodioAtual));
   }
-  opcaoSelecionada(video) {
-
+  opcaoSelecionada(videoSelecionado) {
+    for (const video in this.videos) {
+      if (this.videos[video].titulo === videoSelecionado.option.value) {
+        this.videosFiltrados = [this.videos[video]];
+        break;
+      }
+    }
   }
 }
