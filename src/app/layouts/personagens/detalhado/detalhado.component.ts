@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '../../../../../node_modules/@angular/material';
 
 @Component({
   selector: 'app-detalhado',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalhadoComponent implements OnInit {
 
-  constructor() { }
+  personagem: Object;
+  constructor(private dialogRef: MatDialogRef<DetalhadoComponent>,
+              @Inject(MAT_DIALOG_DATA) data) {
+                this.personagem = data.dados;
+              }
 
   ngOnInit() {
   }
