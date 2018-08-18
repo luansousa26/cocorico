@@ -2,10 +2,11 @@
   <div class="col-md-12 col-sm-12">
     <img src="{{personagem.imagemPersonagem}}">
   </div>
-  <div class="col-md-12 col-sm-12">
+  <div class="texto-alinhado col-md-12 col-sm-12">
+    <h5>{{personagem.nomePersonagem}}</h5>
     <span>{{personagem.descricaoPersonagem}}</span>
   </div>
   <div align="right">
-      <button (click)="fechar()" mat-raised-button>Fechar</button>
+    <button (click)="fechar()" mat-raised-button>Fechar</button>
   </div>
 </div>
