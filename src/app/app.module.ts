@@ -10,6 +10,7 @@ import { CarouselComponent } from './layouts/carousel/carousel.component';
 import { PersonagensComponent } from './layouts/personagens/personagens.component';
 import { NoticiasComponent } from './layouts/noticias/noticias.component';
 import { DetalhadoComponent } from './layouts/personagens/detalhado/detalhado.component';
+import { VideosComponent } from './telas/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DetalhadoComponent } from './layouts/personagens/detalhado/detalhado.co
     CarouselComponent,
     PersonagensComponent,
     NoticiasComponent,
-    DetalhadoComponent
+    DetalhadoComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
