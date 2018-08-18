@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Videos } from './videos.model';
 
 @Component({
   selector: 'app-videos',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideosComponent implements OnInit {
 
+  videos: Videos[] = [];
   constructor() { }
 
   ngOnInit() {
