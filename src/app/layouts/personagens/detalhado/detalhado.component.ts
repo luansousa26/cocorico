@@ -8,13 +8,15 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '../../../../../node_modules/@angu
 })
 export class DetalhadoComponent implements OnInit {
 
-  personagem: Object;
+  personagem: any;
   constructor(private dialogRef: MatDialogRef<DetalhadoComponent>,
-              @Inject(MAT_DIALOG_DATA) data) {
-                this.personagem = data.dados;
-              }
+    @Inject(MAT_DIALOG_DATA) data) {
+    this.personagem = data.dados;
+  }
 
   ngOnInit() {
   }
-
+  fechar() {
+    this.dialogRef.close();
+  }
 }
