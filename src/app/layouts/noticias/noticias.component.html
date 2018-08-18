@@ -3,16 +3,16 @@
     <h5>Notícias</h5>
   </div>
   <div class="row">
-    <div class="col-md-6 col-sm-12">
+    <div *ngFor="let noticia of noticias" class="col-md-6 col-sm-12">
       <mat-card id="center-align">
-        <mat-card-title>Show do Cocoricó</mat-card-title>
+        <mat-card-title>{{noticia.titulo}}</mat-card-title>
         <mat-card-content>
           <p>
-            Novo show do Cocoricó.
+            {{noticia.descricao}}
           </p>
         </mat-card-content>
         <div name="imagem_noticia">
-          <img src="assets/noticias/tvcultura.png">
+          <img src="{{noticia.imagem}}">
         </div>
         <div id="btn-lermais" align="center">
           <button mat-raised-button>Ler mais</button>
