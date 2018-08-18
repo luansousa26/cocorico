@@ -5,6 +5,11 @@
   <div class="row">
     <div *ngFor="let noticia of noticias" class="col-md-6 col-sm-12">
       <mat-card id="center-align">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">
+            <img class="avatar" src="assets/icones/julio.png">
+          </div>
+        </mat-card-header>
         <mat-card-title>{{noticia.titulo}}</mat-card-title>
         <mat-card-content>
           <p>
@@ -12,7 +17,7 @@
           </p>
         </mat-card-content>
         <div name="imagem_noticia">
-          <img src="{{noticia.imagem}}">
+          <img class="img-noticia" src="{{noticia.imagem}}">
         </div>
         <div id="btn-lermais" align="center">
           <button mat-raised-button>Ler mais</button>

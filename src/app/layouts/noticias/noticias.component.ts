@@ -12,7 +12,9 @@ export class NoticiasComponent implements OnInit {
 
   ngOnInit() {
     this.noticias = [
-      { id: 1, titulo: 'Show do Cocoricó', descricao: 'Novo show do Cocoricó.', imagem: 'assets/noticias/tvcultura.png' }];
+      { id: 1, titulo: 'Show do Cocoricó', descricao: 'Novo show do Cocoricó.', imagem: 'assets/noticias/noticia1.jpg' },
+      { id: 2, titulo: 'Novos Episódios', descricao: 'Novos episódios saindo do forno.', imagem: 'assets/noticias/noticia1.jpg' }
+    ];
   }
 
 }
