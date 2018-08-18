@@ -5,7 +5,7 @@ import { HomeComponent } from '../telas/home/home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'videos', component: VideosComponent }
+  { path: 'episodios', component: VideosComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
