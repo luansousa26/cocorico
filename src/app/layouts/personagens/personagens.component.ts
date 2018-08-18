@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '../../../../node_modules/@angular/material';
 
 @Component({
   selector: 'app-personagens',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PersonagensComponent implements OnInit {
 
   personagens: any[] = [];
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
     this.personagens = [
