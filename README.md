@@ -11,6 +11,7 @@
 ## Telas:
 ![image](https://user-images.githubusercontent.com/33549496/44302389-e956b700-a2fd-11e8-9ec9-1021a033ad31.png)
 ![image](https://user-images.githubusercontent.com/33549496/44302434-d85a7580-a2fe-11e8-99d7-fa02c05f5e90.png)
+![image](https://user-images.githubusercontent.com/33549496/44303995-ff786d80-a325-11e8-88ce-e2f44505a7aa.png)
 ![image](https://user-images.githubusercontent.com/33549496/44303985-9690f580-a325-11e8-91f8-b6c89f1a591b.png)
 ![image](https://user-images.githubusercontent.com/33549496/44303971-3732e580-a325-11e8-969e-2c5752cbff21.png)
 
