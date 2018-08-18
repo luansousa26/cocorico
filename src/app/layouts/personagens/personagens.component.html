@@ -1,9 +1,9 @@
 <mat-tab-group class="tab">
   <mat-tab *ngFor="let personagem of personagens">
     <ng-template mat-tab-label>
+      <div class="nomePersonagem" (click)="selecionarPersonagem(personagem)">
       <img class="imagem-personagens" src="{{personagem.imagemPersonagem}}">
-      <div class="nomePersonagem">
-        <span>{{personagem.nomePersonagem}}</span>
+        <span>&ensp;{{personagem.nomePersonagem}}</span>
       </div>
     </ng-template>
   </mat-tab>

@@ -31,5 +31,7 @@ export class PersonagensComponent implements OnInit {
       {id: 17, nomePersonagem: 'Sapo Martelo', descricaoPersonagem: 'Sapo Martelo', imagemPersonagem: './assets/personagens/sapo-martelo.jpg'}
     ]
   }
-
+  selecionarPersonagem(personagem: Object) {
+    console.log(personagem);
+  }
 }
