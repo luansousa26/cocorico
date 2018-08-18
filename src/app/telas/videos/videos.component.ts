@@ -43,6 +43,10 @@ export class VideosComponent implements OnInit {
         id: 6, titulo: 'Que conto é esse?', descricao: 'A galera do Paiol quer brincar de teatro, mas cada um quer ser o herói de uma história. Então, brigam, pois qual história farão? E resolvem fazer uma nova história que tenha o personagem de cada um. Assim é feito!',
         youtube: 'SM0GZadmTUc'
       },
+      { // tslint:disable-next-line:max-line-length
+        id: 7, titulo: 'Férias de verão', descricao: 'Férias de verão. Nada para fazer e o dia todo para brincar. Júlio e os amigos inventam várias brincadeiras e Júlio ensina um jogo que aprendeu na escola com músicas tradicionais do nosso folclore.',
+        youtube: 'raW5KC97SbY'
+      },
     ];
   }
 
