@@ -1,23 +1,22 @@
 <div class="videos-container col-md-12 col-sm-12">
-   <div *ngFor="let video of videos" class="videos-cards col-md-3 col-sm-12">
+  <div class="row">
+    <div *ngFor="let video of videos" class="videos-cards col-md-3 col-sm-12">
       <mat-card class="example-card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title><h5>{{video.titulo}}</h5></mat-card-title>
-            <mat-card-subtitle>12:01</mat-card-subtitle>
-          </mat-card-header>
-          <div>
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/6wD4V0rvlDI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-          <mat-card-content>
-            <p>
-                {{video.descricao}}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
-   </div>
+        <mat-card-header>
+          <mat-card-title id="titulo-card"><strong>{{video.titulo}}</strong></mat-card-title>
+          <mat-card-subtitle>Cocoricó</mat-card-subtitle>
+        </mat-card-header>
+        <div>
+          <iframe width="100%" height="200" [src]="corrigirUrlYoutube(video)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <mat-card-content>
+          <p>
+            {{video.descricao}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
 </div>
