@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiasComponent implements OnInit {
 
+  noticias: String[] = [];
   constructor() { }
 
   ngOnInit() {

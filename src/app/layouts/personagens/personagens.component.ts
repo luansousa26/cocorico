@@ -22,16 +22,21 @@ export class PersonagensComponent implements OnInit {
       { id: 6, nomePersonagem: 'Lola ', descricaoPersonagem: 'Lola', imagemPersonagem: './assets/personagens/lola.jpg' },
       { id: 7, nomePersonagem: 'Mimosa ', descricaoPersonagem: 'Vaca Mimosa', imagemPersonagem: './assets/personagens/mimosa.jpg' },
       { id: 8, nomePersonagem: 'Astolfo ', descricaoPersonagem: 'Porquinho Astolfo', imagemPersonagem: './assets/personagens/astolfo.jpg' },
-      { id: 9, nomePersonagem: 'Toquinho ', descricaoPersonagem: 'Morcego Toquinho', imagemPersonagem: './assets/personagens/toquinho.jpg' },
-      { id: 10, nomePersonagem: 'Oriba ', descricaoPersonagem: 'India Oriba', imagemPersonagem: './assets/personagens/oriba.jpg' },
-      { id: 11, nomePersonagem: 'Dito e Feito ', descricaoPersonagem: 'Dito e Feito', imagemPersonagem: './assets/personagens/ditoefeito.jpg' },
+      { id: 9, nomePersonagem: 'Toquinho ', descricaoPersonagem: 'Morcego Toquinho',
+      imagemPersonagem: './assets/personagens/toquinho.jpg' },
+      { id: 10, nomePersonagem: 'Oriba ', descricaoPersonagem: 'India Oriba',
+      imagemPersonagem: './assets/personagens/oriba.jpg' },
+      { id: 11, nomePersonagem: 'Dito e Feito ', descricaoPersonagem: 'Dito e Feito',
+      imagemPersonagem: './assets/personagens/ditoefeito.jpg' },
       { id: 12, nomePersonagem: 'Avô e Avó ', descricaoPersonagem: 'Avô e Avó', imagemPersonagem: './assets/personagens/avoeavo.jpg' },
       { id: 13, nomePersonagem: 'João', descricaoPersonagem: 'João', imagemPersonagem: './assets/personagens/joao.jpg' },
       { id: 14, nomePersonagem: 'Pata Vina', descricaoPersonagem: 'Pata Vina', imagemPersonagem: './assets/personagens/pata-vina.jpg' },
-      { id: 15, nomePersonagem: 'Pato Torquato', descricaoPersonagem: 'Pato Torquato', imagemPersonagem: './assets/personagens/pato-torquato.jpg' },
+      { id: 15, nomePersonagem: 'Pato Torquato', descricaoPersonagem: 'Pato Torquato',
+       imagemPersonagem: './assets/personagens/pato-torquato.jpg' },
       { id: 16, nomePersonagem: 'Rodolfo', descricaoPersonagem: 'Rodolfo', imagemPersonagem: './assets/personagens/rodolfo.jpg' },
-      { id: 17, nomePersonagem: 'Sapo Martelo', descricaoPersonagem: 'Sapo Martelo', imagemPersonagem: './assets/personagens/sapo-martelo.jpg' }
-    ]
+      { id: 17, nomePersonagem: 'Sapo Martelo', descricaoPersonagem: 'Sapo Martelo',
+      imagemPersonagem: './assets/personagens/sapo-martelo.jpg' }
+    ];
   }
   selecionarPersonagem(personagem: Object) {
     const dialogConfig = new MatDialogConfig();
