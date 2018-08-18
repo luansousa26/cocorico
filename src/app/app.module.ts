@@ -11,6 +11,7 @@ import { PersonagensComponent } from './layouts/personagens/personagens.componen
 import { NoticiasComponent } from './layouts/noticias/noticias.component';
 import { DetalhadoComponent } from './layouts/personagens/detalhado/detalhado.component';
 import { VideosComponent } from './telas/videos/videos.component';
+import { AppRoutingModule } from './rotas/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { VideosComponent } from './telas/videos/videos.component';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
   ],
   entryComponents: [
     DetalhadoComponent
