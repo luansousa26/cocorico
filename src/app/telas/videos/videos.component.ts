@@ -13,7 +13,12 @@ export class VideosComponent implements OnInit {
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
-    this.videos = [];
+    this.videos = [
+      {
+        // tslint:disable-next-line:max-line-length
+        id: 1, titulo: 'Já falei mais de mil vezes', descricao: 'Zazá está sempre mal-humorada e fica implicandocom todo mundo. Cada vez que alguém faz uma coisa errada, ela diz: "já falei mais de mil vezes que não é para fazer isso!". Lilica, que quer sempre brincar, começa a brincar com isso e Zazá leva a sério.',
+        youtube: 'IbnedIp7jPc'
+      }];
   }
 
   corrigirUrlYoutube(video) {
