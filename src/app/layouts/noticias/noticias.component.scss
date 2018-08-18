@@ -16,3 +16,22 @@ img{
     font-family: Marker Felt,fantasy;
     text-transform: uppercase;
 }
+:host /deep/ .mat-raised-button{
+    background:#28a745;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    padding: 13px 34px 14px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: solid 1px transparent;
+  }
+  .mat-raised-button:hover{
+    transition: 1s;
+    background:#35df5c;
+    color: rgb(27, 92, 167);
+  }
+  #btn-lermais{
+      margin-top: 4%;
+  }
