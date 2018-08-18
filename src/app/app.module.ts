@@ -27,6 +27,9 @@ import { DetalhadoComponent } from './layouts/personagens/detalhado/detalhado.co
     MaterialModule,
     NgbModule.forRoot()
   ],
+  entryComponents: [
+    DetalhadoComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
