@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiasComponent implements OnInit {
 
-  noticias: String[] = [];
+  noticias: any[] = [];
   constructor() { }
 
   ngOnInit() {
+    this.noticias = [
+      { id: 1, titulo: 'Show do Cocoricó', descricao: 'Novo show do Cocoricó.', imagem: 'assets/noticias/tvcultura.png' }];
   }
 
 }
