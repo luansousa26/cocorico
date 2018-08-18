@@ -9,4 +9,5 @@
 * Bootstrap. :horse:
 
 ## Telas:
-![image](https://user-images.githubusercontent.com/33549496/44005367-7dacea42-9e48-11e8-8709-e2d9319aa70f.png)
+![image](https://user-images.githubusercontent.com/33549496/44293943-b01f3800-a266-11e8-9ea4-2fb9d88da9cf.png)
+
