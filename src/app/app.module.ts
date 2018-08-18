@@ -12,6 +12,7 @@ import { NoticiasComponent } from './layouts/noticias/noticias.component';
 import { DetalhadoComponent } from './layouts/personagens/detalhado/detalhado.component';
 import { VideosComponent } from './telas/videos/videos.component';
 import { AppRoutingModule } from './rotas/app-routing.module';
+import { HomeComponent } from './telas/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './rotas/app-routing.module';
     PersonagensComponent,
     NoticiasComponent,
     DetalhadoComponent,
-    VideosComponent
+    VideosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
