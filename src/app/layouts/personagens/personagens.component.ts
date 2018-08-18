@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '../../../../node_modules/@angular/material';
 import { DetalhadoComponent } from './detalhado/detalhado.component';
+import { Personagens } from './personagens.model';
 
 @Component({
   selector: 'app-personagens',
