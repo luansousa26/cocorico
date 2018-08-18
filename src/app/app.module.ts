@@ -13,6 +13,7 @@ import { DetalhadoComponent } from './layouts/personagens/detalhado/detalhado.co
 import { VideosComponent } from './telas/videos/videos.component';
 import { AppRoutingModule } from './rotas/app-routing.module';
 import { HomeComponent } from './telas/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HomeComponent } from './telas/home/home.component';
     BrowserAnimationsModule,
     MaterialModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   entryComponents: [
     DetalhadoComponent

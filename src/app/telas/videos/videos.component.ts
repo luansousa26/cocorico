@@ -10,6 +10,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class VideosComponent implements OnInit {
 
   videos: Videos[] = [];
+  videosFiltrados: Videos[] = [];
+  episodioAtual: String;
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -104,5 +106,14 @@ export class VideosComponent implements OnInit {
 
   corrigirUrlYoutube(video) {
     return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.youtube}?ecver=2`);
+  }
+  filtro() {
+    this.videosFiltrados = this.filtrar(this.videos);
+  }
+  filtrar(values) {
+    return values.filter(episodio => episodio.titulo.toLowerCase().includes(this.episodioAtual));
+  }
+  opcaoSelecionada(video) {
+
   }
 }

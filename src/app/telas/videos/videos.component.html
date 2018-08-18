@@ -1,4 +1,21 @@
 <div class="videos-container col-md-12 col-sm-12">
+  <div id="header-videos" class="row">
+    <div id="titulo" class="col-md-6 col-sm-12">
+      Episódios Cocoricó
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <mat-form-field class="tamanhoCampo">
+            <input matInput (click)="episodioAtual = '';filtro()" placeholder="Filtro de episódios" [(ngModel)]="episodioAtual" name="episodioSelecionado" (ngModelChange)="filtro()"
+              aria-label="Linguagem" [matAutocomplete]="auto">
+            <mat-autocomplete (optionSelected)="opcaoSelecionada($event)" #auto="matAutocomplete">
+              <mat-option *ngFor="let video of videosFiltrados" [value]="video.titulo">
+                <span>{{video.titulo}}</span>
+                <small>&nbsp;&nbsp;&nbsp;<img id="small-icon" src="{{video.icone}}"></small>
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+    </div>
+  </div>
   <div class="row">
     <div *ngFor="let video of videos" class="videos-cards col-md-3 col-sm-12">
       <mat-card class="example-card">

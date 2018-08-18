@@ -6,7 +6,9 @@ img{
     padding-top: 72px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 72px;
     text-align: center;
+    background:#F6F6F6;
 }
 .videos-cards{
     text-align: center;
@@ -17,4 +19,20 @@ img{
 .mat-card{
     height: 530px;
     overflow-y: auto;
+}
+.tamanhoCampo{
+    width: 75%;
+}
+#small-icon{
+    width: 15%;
+}
+#titulo{
+    color: #343434;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Marker Felt,fantasy;
+    text-transform: uppercase;
+}
+#header-videos{
+    background:#F6F6F6;
 }
