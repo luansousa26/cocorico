@@ -9,7 +9,7 @@ import { DetalhadoComponent } from './detalhado/detalhado.component';
 })
 export class PersonagensComponent implements OnInit {
 
-  personagens: any[] = [];
+  personagens: Personagens[] = [];
   constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
