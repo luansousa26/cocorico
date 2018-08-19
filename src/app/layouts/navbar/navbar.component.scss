@@ -6,3 +6,30 @@
 img{
     height: 50px;
 }
+.itens-navbar:hover{
+    font-size: 18px;
+    color: white;
+    background: transparent;
+    border: solid 2px;
+    border-color: white;
+    padding:10px;
+    cursor: pointer;
+   
+}
+.itens-navbar{
+    color: rgb(232, 248, 4);
+}
+.espaco{
+    margin-left: 350px;
+}
+li{
+    padding-left: 18px;
+}
+ul{
+    display: -webkit-inline-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 22px;
+}
