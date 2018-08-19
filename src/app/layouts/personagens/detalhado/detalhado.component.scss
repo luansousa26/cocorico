@@ -3,5 +3,17 @@
   color: white;
 }
 .texto-alinhado {
+    margin-top:20px;
     text-align: center;
+}
+:host /deep/ .mat-dialog-container{
+  overflow-y: auto !important;
+}
+#titulo{
+  font-size:30px;
+  font-weight: bold;
+}
+img{
+  width: 100%;
+  height: 300px;
 }
