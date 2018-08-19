@@ -4,16 +4,16 @@
       <span>Episódios do Cocoricó</span>
     </div>
     <div class="col-md-6 col-sm-12">
-        <mat-form-field class="tamanhoCampo">
-            <input matInput (click)="filtro()" placeholder="Filtro de episódios" [(ngModel)]="episodioAtual" name="episodioSelecionado" (ngModelChange)="filtro()"
-              aria-label="Linguagem" [matAutocomplete]="auto">
-            <mat-autocomplete (optionSelected)="opcaoSelecionada($event)" #auto="matAutocomplete">
-              <mat-option *ngFor="let video of videosFiltrados" [value]="video.titulo">
-                <span>{{video.titulo}}</span>
-                <small>&nbsp;&nbsp;&nbsp;<img id="small-icon" src="{{video.icone}}"></small>
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
+      <mat-form-field class="tamanhoCampo">
+        <input matInput (click)="filtro()" placeholder="Filtro de episódios" [(ngModel)]="episodioAtual" name="episodioSelecionado"
+          (ngModelChange)="filtro()" aria-label="Linguagem" [matAutocomplete]="auto">
+        <mat-autocomplete (optionSelected)="opcaoSelecionada($event)" #auto="matAutocomplete">
+          <mat-option *ngFor="let video of videosFiltrados" [value]="video.titulo">
+            <span>{{video.titulo}}</span>
+            <small>&nbsp;&nbsp;&nbsp;<img id="small-icon" src="{{video.icone}}"></small>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
     </div>
   </div>
   <div class="row">
@@ -36,5 +36,9 @@
         </mat-card-actions>
       </mat-card>
     </div>
+  </div>
+  <div [hidden]="episodioAtual !== ''">
+    <mat-paginator [length]="videos.length" [pageSize]="10" (page)="paginar($event)">
+    </mat-paginator>
   </div>
 </div>

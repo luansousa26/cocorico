@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Videos } from './videos.model';
 import { DomSanitizer } from '@angular/platform-browser';
+import { MatPaginator } from '@angular/material';
 
 @Component({
   selector: 'app-videos',
@@ -12,6 +13,8 @@ export class VideosComponent implements OnInit {
   videos: Videos[] = [];
   videosFiltrados: Videos[] = [];
   episodioAtual: String = '';
+  controlador = 10;
+  paginaAnterior = 0;
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -102,7 +105,7 @@ export class VideosComponent implements OnInit {
         youtube: 'F5pNWvTgFlI', icone: './assets/personagens/lilica.jpg'
       },
     ];
-    this.videosFiltrados = JSON.parse(JSON.stringify(this.videos));
+    this.paginarVideos(this.controlador);
   }
 
   corrigirUrlYoutube(video) {
@@ -111,6 +114,9 @@ export class VideosComponent implements OnInit {
   filtro() {
     this.videosFiltrados = JSON.parse(JSON.stringify(this.videos));
     this.videosFiltrados = this.filtrar(this.videos);
+    if (this.episodioAtual === '') {
+      this.paginarVideos(10);
+    }
   }
   filtrar(values) {
     return values.filter(episodio => episodio.titulo.toLowerCase().includes(this.episodioAtual));
@@ -121,6 +127,26 @@ export class VideosComponent implements OnInit {
         this.videosFiltrados = [this.videos[video]];
         break;
       }
+    }
+  }
+  paginar(event: MatPaginator) {
+    if (event !== undefined) {
+      if (event.pageIndex < this.paginaAnterior) {
+        this.controlador -= 10;
+      } else {
+        this.controlador += 10;
+      }
+      this.paginaAnterior = event.pageIndex;
+    }
+    this.paginarVideos(this.controlador);
+  }
+
+  paginarVideos(controlador: number) {
+    let inicial = controlador - 10;
+    let num = 0;
+    this.videosFiltrados = [];
+    for (inicial; inicial < controlador; inicial++ , num++) {
+      this.videosFiltrados[num] = this.videos[inicial];
     }
   }
 }

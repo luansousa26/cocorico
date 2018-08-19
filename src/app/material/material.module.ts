@@ -10,7 +10,8 @@ import {
   MatIconModule,
   MatButtonModule,
   MatExpansionModule,
-  MatTabsModule
+  MatTabsModule,
+  MatPaginatorModule
       } from '@angular/material';
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import {
     MatToolbarModule,
     MatSnackBarModule,
     MatDialogModule,
-    MatTabsModule
+    MatTabsModule,
+    MatPaginatorModule
   ],
   declarations: []
 })
