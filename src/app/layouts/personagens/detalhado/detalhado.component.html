@@ -1,15 +1,17 @@
 <div class="col-md-12 col-sm-12">
-  <div class="col-md-12 col-sm-12">
-    <img src="{{personagem.imagemPersonagem}}">
-  </div>
-  <div class="texto-alinhado col-md-12 col-sm-12">
-    <div id="titulo">
-     {{personagem.nomePersonagem}}
+  <mat-dialog-content>
+    <div class="col-md-12 col-sm-12">
+      <img src="{{personagem.imagemPersonagem}}">
     </div>
-    <br/>
-    <span>{{personagem.descricaoPersonagem}}</span>
-  </div>
+    <div class="texto-alinhado col-md-12 col-sm-12">
+      <div id="titulo">
+        {{personagem.nomePersonagem}}
+      </div>
+      <br/>
+      <span>{{personagem.descricaoPersonagem}}</span>
+    </div>
+  </mat-dialog-content>
   <div align="right">
-    <button (click)="fechar()" mat-raised-button>Fechar</button>
+      <button (click)="fechar()" mat-raised-button>Fechar</button>
   </div>
 </div>
