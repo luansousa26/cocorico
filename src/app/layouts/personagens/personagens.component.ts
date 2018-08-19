@@ -35,17 +35,17 @@ export class PersonagensComponent implements OnInit {
         id: 6, nomePersonagem: 'Lola ', descricaoPersonagem: 'Uma galinha da fazenda bastante sábia e esperta. Por sua esperteza, ela sempre ensina coisas novas pro pessoal da fazenda. No passado Lola já foi uma artista de circo e chegou a viajar pelo mundo todo. Ela também se destaca por ser a que melhor canta na fazenda. Sua melhor amiga é a Zazá, conhecendo ela desde a juventude. Ela sempre anda com um chapéu rosa.', imagemPersonagem: './assets/personagens/lola.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 7, nomePersonagem: 'Mimosa ', descricaoPersonagem: '- É uma vaca azul gentil e doce, que está sempre correndo para ajudar alguém e resolver os problemas. Mimosa gosta muito de contar histórias para entreter Caco e Lilica.', imagemPersonagem: './assets/personagens/mimosa.jpg'
+        id: 7, nomePersonagem: 'Mimosa ', descricaoPersonagem: 'É uma vaca azul gentil e doce, que está sempre correndo para ajudar alguém e resolver os problemas. Mimosa gosta muito de contar histórias para entreter Caco e Lilica.', imagemPersonagem: './assets/personagens/mimosa.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 8, nomePersonagem: 'Astolfo ', descricaoPersonagem: 'Porquinho Astolfo', imagemPersonagem: './assets/personagens/astolfo.jpg'
+        id: 8, nomePersonagem: 'Astolfo ', descricaoPersonagem: 'É um porquinho bebê muito ingênuo e manhoso. Apesar de ser um bebê, é capaz de falar e se interagir com os demais personagens. Surgiu a partir da fase de 2003, desde então mostrando muita importância no programa. É frequentemente mimado pela mãe, a mesma cujo rosto nunca é mostrado, apenas as mãos e quase sempre fica em seu berço no chiqueiro da fazenda. Muitas vezes é visto chorando, na maioria das vezes por motivos desnecessários.', imagemPersonagem: './assets/personagens/astolfo.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 9, nomePersonagem: 'Toquinho ', descricaoPersonagem: 'Morcego Toquinho',
+        id: 9, nomePersonagem: 'Toquinho ', descricaoPersonagem: 'É um morcego amigo do pessoal do Paiol. É muito nervoso e pessimista, sempre achando que as coisas vão dar errado e reclamando assustado com tudo o que acontece na fazenda. É banguela, tendo apenas uma presa saindo da boca. Depois da temporada de 2007 passou a aparecer com mais frequência e a ter um bordão: "Eu sabia que isso não vai dar certo", muitas vezes irritando seus amigos com seus exageros pessimistas. Ele é um morcego frutífero.',
         imagemPersonagem: './assets/personagens/toquinho.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 10, nomePersonagem: 'Oriba ', descricaoPersonagem: 'India Oriba',
+        id: 10, nomePersonagem: 'Oriba ', descricaoPersonagem: 'Uma índia amiga de Júlio e seus amigos. Ela conheceu a turma enquanto procurava encontrar um chocalho pertencente a sua tribo tendo a princípio brigado com Júlio, mas depois se tornado amiga dele. Mora numa aldeia próxima a fazenda, uma vez dita como a dos tupis-guaranis, porém nunca foi mostrada no programa, assim como seus pais e outros integrantes da tribo. Ela demonstra uma relação amistosa com Júlio embora frequentemente brigue com ele, mas no fundo possui uma leve paixão por ele, tanto que demonstra ciúmes em relação a Vitória na fase da Cidade. Ela estuda na mesma escola que o Júlio.',
         imagemPersonagem: './assets/personagens/oriba.jpg'
       },
       { // tslint:disable-next-line:max-line-length
