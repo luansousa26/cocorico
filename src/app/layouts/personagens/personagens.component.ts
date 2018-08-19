@@ -49,20 +49,20 @@ export class PersonagensComponent implements OnInit {
         imagemPersonagem: './assets/personagens/oriba.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 11, nomePersonagem: 'Dito e Feito ', descricaoPersonagem: 'Dito e Feito',
+        id: 11, nomePersonagem: 'Dito e Feito ', descricaoPersonagem: ' Uma dupla encrenqueira que sempre arma confusão na fazenda. Feito é o chefe por trás dos planos enquanto que Dito é o ajudante atrapalhado de Feito a quem ele sempre chama de "bobalhão", embora são raras as ocasiões que Feito chama de Dito. Na verdade, quem sempre tem as boas ideias é Dito, porém Feito sempre faz ele pensar que suas ideias são dele, mas no final é Feito quem sempre acaba se saindo mal. Os dois são os únicos da série que não são bichos definidos, embora Dito se aparente com um macaco e Feito com um roedor. Depois da temporada de 2007 eles passaram a ajudar Torquato em seus planos contra o paiol.',
         imagemPersonagem: './assets/personagens/ditoefeito.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 12, nomePersonagem: 'Avô e Avó ', descricaoPersonagem: 'Avô e Avó', imagemPersonagem: './assets/personagens/avoeavo.jpg'
+        id: 12, nomePersonagem: 'Avô e Avó ', descricaoPersonagem: 'São os avós de Júlio, João e Rodolfo. A Vó já trabalhou como professora, mas agora trabalha como doceira vendendo doces para a cidade, enquanto que o Vô trabalha como agricultor da fazenda e cuida dos animais. Eles nunca tiveram seus nomes mencionados no programa. São pais de Dora (e possivelmente de um dos pais de Júlio, mais precisamente da mãe de Júlio) e sogros de Noel.', imagemPersonagem: './assets/personagens/avoeavo.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 13, nomePersonagem: 'João', descricaoPersonagem: 'João', imagemPersonagem: './assets/personagens/joao.jpg'
+        id: 13, nomePersonagem: 'João', descricaoPersonagem: '- É o primo de Júlio todo moderninho e cheio de gírias. Ele mora na cidade grande junto de sua família, passando as férias na fazenda. É introduzido no final da segunda fase, desde então passando a ser o melhor amigo de Júlio fazendo tudo junto dele. No começo foi apresentado como um garoto obcecado pela cultura hip hop com pensamentos científicos, cantando rap e dançando break. Mais adiante ele também demonstra um fascínio por tecnologia. A partir da fase da Cidade, ele abandona essas características e passa a ser mostrado um garoto normal.', imagemPersonagem: './assets/personagens/joao.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 14, nomePersonagem: 'Pata Vina', descricaoPersonagem: 'Pata Vina', imagemPersonagem: './assets/personagens/pata-vina.jpg'
+        id: 14, nomePersonagem: 'Pata Vina', descricaoPersonagem: ' É uma pata arrogante e mandona que adora dar ordens a seu marido, o Pato Torquato. Ela também é cozinheira e sempre gosta de ser o centro das atenções de tudo cabendo a forçar seu marido Torquato a armar planos contra o pessoal do Paiol por isso. Frequentemente fala com os Qs carregados assim como Torquato.', imagemPersonagem: './assets/personagens/pata-vina.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 15, nomePersonagem: 'Pato Torquato', descricaoPersonagem: 'Pato Torquato',
+        id: 15, nomePersonagem: 'Pato Torquato', descricaoPersonagem: 'Um pato muito encrenqueiro, é marido da Pata Vina. Antes de se casar já havia feito umas aparições antes incomodando o pessoal do Paiol. Após seu casamento com a Vina ele se torna um personagem fixo, passando a ser visto incomodando o pessoal da fazenda com maior frequência e manipulando Dito e Feito como seus cúmplices. Sempre se apresenta falando "Pato Torquato, o seu amigo de fato", além de falar os Qs sobrecarregados.',
         imagemPersonagem: './assets/personagens/pato-torquato.jpg'
       },
       { // tslint:disable-next-line:max-line-length
