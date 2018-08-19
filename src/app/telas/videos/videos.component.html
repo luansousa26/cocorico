@@ -39,6 +39,6 @@
   </div>
 </div>
 <div [hidden]="episodioAtual !== ''">
-    <mat-paginator [length]="videos.length" [pageSize]="10" (page)="paginar($event)">
+    <mat-paginator [length]="videos.length" [pageSize]="4" (page)="paginar($event)">
     </mat-paginator>
   </div>

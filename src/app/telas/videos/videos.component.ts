@@ -13,7 +13,7 @@ export class VideosComponent implements OnInit {
   videos: Videos[] = [];
   videosFiltrados: Videos[] = [];
   episodioAtual: String = '';
-  controlador = 10;
+  controlador = 4;
   paginaAnterior = 0;
   constructor(private sanitazer: DomSanitizer) { }
 
@@ -115,7 +115,7 @@ export class VideosComponent implements OnInit {
     this.videosFiltrados = JSON.parse(JSON.stringify(this.videos));
     this.videosFiltrados = this.filtrar(this.videos);
     if (this.episodioAtual === '') {
-      this.paginarVideos(10);
+      this.paginarVideos(4);
     }
   }
   filtrar(values) {
@@ -132,9 +132,9 @@ export class VideosComponent implements OnInit {
   paginar(event: MatPaginator) {
     if (event !== undefined) {
       if (event.pageIndex < this.paginaAnterior) {
-        this.controlador -= 10;
+        this.controlador -= 4;
       } else {
-        this.controlador += 10;
+        this.controlador += 4;
       }
       this.paginaAnterior = event.pageIndex;
     }
@@ -142,10 +142,13 @@ export class VideosComponent implements OnInit {
   }
 
   paginarVideos(controlador: number) {
-    let inicial = controlador - 10;
+    let inicial = controlador - 4;
     let num = 0;
     this.videosFiltrados = [];
     for (inicial; inicial < controlador; inicial++ , num++) {
+      if (this.videos[inicial] === undefined) {
+          break;
+      }
       this.videosFiltrados[num] = this.videos[inicial];
     }
   }
