@@ -113,9 +113,11 @@ export class VideosComponent implements OnInit {
   }
   filtro() {
     this.videosFiltrados = JSON.parse(JSON.stringify(this.videos));
-    this.videosFiltrados = this.filtrar(this.videos);
     if (this.episodioAtual === '') {
       this.paginarVideos(4);
+    }
+    if (this.episodioAtual.length > 1) {
+      this.videosFiltrados = this.filtrar(this.videos);
     }
   }
   filtrar(values) {
@@ -147,7 +149,7 @@ export class VideosComponent implements OnInit {
     this.videosFiltrados = [];
     for (inicial; inicial < controlador; inicial++ , num++) {
       if (this.videos[inicial] === undefined) {
-          break;
+        break;
       }
       this.videosFiltrados[num] = this.videos[inicial];
     }

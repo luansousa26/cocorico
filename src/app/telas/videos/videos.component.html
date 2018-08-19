@@ -8,7 +8,7 @@
         <input matInput (click)="filtro()" placeholder="Filtro de episódios" [(ngModel)]="episodioAtual" name="episodioSelecionado"
           (ngModelChange)="filtro()" aria-label="Linguagem" [matAutocomplete]="auto">
         <mat-autocomplete (optionSelected)="opcaoSelecionada($event)" #auto="matAutocomplete">
-          <mat-option *ngFor="let video of videosFiltrados" [value]="video.titulo">
+          <mat-option *ngFor="let video of videos" [value]="video.titulo">
             <span>{{video.titulo}}</span>
             <small>&nbsp;&nbsp;&nbsp;<img id="small-icon" src="{{video.icone}}"></small>
           </mat-option>
