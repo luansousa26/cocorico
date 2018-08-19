@@ -66,10 +66,10 @@ export class PersonagensComponent implements OnInit {
         imagemPersonagem: './assets/personagens/pato-torquato.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 16, nomePersonagem: 'Rodolfo', descricaoPersonagem: 'Rodolfo', imagemPersonagem: './assets/personagens/rodolfo.jpg'
+        id: 16, nomePersonagem: 'Rodolfo', descricaoPersonagem: 'O irmão caçula de João.', imagemPersonagem: './assets/personagens/rodolfo.jpg'
       },
       { // tslint:disable-next-line:max-line-length
-        id: 17, nomePersonagem: 'Sapo Martelo', descricaoPersonagem: 'Sapo Martelo',
+        id: 17, nomePersonagem: 'Sapo Martelo', descricaoPersonagem: 'Um pequeno sapo que mora numa lagoa ao lado da casa de Torquato e Vina. Ele não come insetos preferindo comer doces, inclusive tendo uma mosca amiga chamada Zac Zac que conversa com ele. Ele se torna um grade amigo da Lilica. É introduzido no final da segunda fase em 2007.',
         imagemPersonagem: './assets/personagens/sapo-martelo.jpg'
       }
     ];
