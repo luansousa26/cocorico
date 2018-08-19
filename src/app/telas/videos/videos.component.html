@@ -37,8 +37,8 @@
       </mat-card>
     </div>
   </div>
-  <div [hidden]="episodioAtual !== ''">
+</div>
+<div [hidden]="episodioAtual !== ''">
     <mat-paginator [length]="videos.length" [pageSize]="10" (page)="paginar($event)">
     </mat-paginator>
   </div>
-</div>
