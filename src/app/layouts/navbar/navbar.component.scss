@@ -43,7 +43,11 @@ ul{
     .icones-responsividade {
         display: block !important;
     }
+    img{
+        height: 36px;
+    }
 }
 .icones-responsividade{
     display: none;
+    cursor: pointer;
 }
