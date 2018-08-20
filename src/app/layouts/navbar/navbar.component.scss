@@ -20,7 +20,7 @@ img{
     color: rgb(232, 248, 4);
 }
 .espaco{
-    margin-left: 350px;
+    margin-left: 250px;
 }
 li{
     padding-left: 18px;
@@ -35,4 +35,15 @@ ul{
 }
 #logo{
     cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+    .espaco{
+        display: none;
+    }
+    .icones-responsividade {
+        display: block !important;
+    }
+}
+.icones-responsividade{
+    display: none;
 }
