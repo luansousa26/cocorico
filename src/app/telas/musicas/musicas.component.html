@@ -3,7 +3,7 @@
     <mat-expansion-panel align="center" *ngFor="let musica of musicas" (opened)="panelOpenState = true" (closed)="panelOpenState = false" align="center">
       <mat-expansion-panel-header>
         <mat-panel-title>
-         {{musica.titulo}}
+          <img src="{{musica.icone}}"> {{musica.titulo}}
         </mat-panel-title>
         <mat-panel-description>
           {{musica.descricao}}
