@@ -9,8 +9,19 @@
         width: 100%;
     }
 }
+@media only screen and (max-width: 600px) {
+    mat-panel-description{
+        display: none;
+    }
+    img{
+        width: 20%;
+        border-radius: 50%;
+        height: 30px;
+    }
+}
+
 img{
-    width: 6%;
+    width: 5%;
     border-radius: 50%;
-    height: 23px;
+    height: 30px;
 }
