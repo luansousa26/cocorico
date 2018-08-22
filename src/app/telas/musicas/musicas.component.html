@@ -1,36 +1,17 @@
 <div class="musicas-container">
   <mat-accordion>
-    <mat-expansion-panel align="center">
+    <mat-expansion-panel align="center" *ngFor="let musica of musicas" (opened)="panelOpenState = true" (closed)="panelOpenState = false" align="center">
       <mat-expansion-panel-header>
         <mat-panel-title>
-          Música 1
+         {{musica.titulo}}
         </mat-panel-title>
         <mat-panel-description>
-          teste
+          {{musica.descricao}}
         </mat-panel-description>
       </mat-expansion-panel-header>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          teste
-        </mat-panel-title>
-        <mat-panel-description>
-         teste
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>teste</p>
-    </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-         teste
-        </mat-panel-title>
-        <mat-panel-description>
-          teste
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>teste</p>
+        <div id="content-video">
+          <iframe width="100%" height="200" [src]="corrigirUrlYoutube(musica)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
     </mat-expansion-panel>
   </mat-accordion>
 </div>
