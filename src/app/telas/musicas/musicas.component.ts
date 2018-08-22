@@ -16,9 +16,29 @@ export class MusicasComponent implements OnInit {
     this.musicas = [
       {
         // tslint:disable-next-line:max-line-length
-        id: 1, titulo: 'Já falei mais de mil vezes', descricao: 'teste.',
-        youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
-      }
+        id: 1, titulo: 'A Avó a Bordar', descricao: 'A turma do paiol canta a música "A Avó a Bordar".', youtube: 'lLg8ClXv-Vs', icone: './assets/personagens/zaza.jpg',
+        musica: '<p>Estava a Avó no seu lugar</p><br/> <p> veio a mosca lhe cutucar</p><br/>'
+      },
+     /* {
+        // tslint:disable-next-line:max-line-length
+        id: 2, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+      },
+      {
+        // tslint:disable-next-line:max-line-length
+        id: 3, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+      },
+      {
+        // tslint:disable-next-line:max-line-length
+        id: 4, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+      },
+      {
+        // tslint:disable-next-line:max-line-length
+        id: 5, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+      },
+      {
+        // tslint:disable-next-line:max-line-length
+        id: 6, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+      }*/
     ];
   }
   corrigirUrlYoutube(video) {
