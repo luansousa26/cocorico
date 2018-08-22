@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicasComponent implements OnInit {
 
+  panelOpenState: boolean;
   constructor() { }
 
   ngOnInit() {
