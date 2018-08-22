@@ -3,15 +3,10 @@
 }
 #content-video{
     width: 50%;
-    left: 45%;
-    position: relative;
-    margin-left: -250px;
 }
 @media only screen and (max-width: 900px) {
     #content-video{
         width: 100%;
-        left: 0%;
-        margin-left: 0px;
     }
 }
 img{

@@ -17,7 +17,8 @@ export class MusicasComponent implements OnInit {
       {
         // tslint:disable-next-line:max-line-length
         id: 1, titulo: 'A Avó a Bordar', descricao: 'A turma do paiol canta a música "A Avó a Bordar".', youtube: 'lLg8ClXv-Vs', icone: './assets/personagens/zaza.jpg',
-        musica: '<p>Estava a Avó no seu lugar</p><br/> <p> veio a mosca lhe cutucar</p><br/>'
+        // tslint:disable-next-line:max-line-length
+        musica: '<p>Estava a Avó no seu lugar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p>'
       },
      /* {
         // tslint:disable-next-line:max-line-length
