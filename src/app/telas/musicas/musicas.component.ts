@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class MusicasComponent implements OnInit {
 
   panelOpenState: boolean;
-  musicas: any;
+  musicas: any[];
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -41,6 +41,13 @@ export class MusicasComponent implements OnInit {
         id: 6, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
       }*/
     ];
+
+  }
+
+  getSafeUrls() {
+    for (let i = 0 ; i < this.musicas.length; i++) {
+
+    }
   }
   corrigirUrlYoutube(video) {
     return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.youtube}?ecver=2`);

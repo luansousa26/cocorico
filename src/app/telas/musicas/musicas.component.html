@@ -13,7 +13,7 @@
       <br/>
        <div class="row">
         <div class="col-md-4 col-sm-12" id="content-video">
-          <iframe width="100%" height="200" [src]="corrigirUrlYoutube(musica)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe width="100%" height="200" [src]="musica.safeUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
        <div class="col-md-6 col-sm-12">
         <article [innerHTML]="musica.musica">
