@@ -41,15 +41,15 @@ export class MusicasComponent implements OnInit {
         id: 6, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
       }*/
     ];
-
+    this.getSafeUrls();
   }
 
   getSafeUrls() {
     for (let i = 0 ; i < this.musicas.length; i++) {
-
+      this.musicas[i].safeUrl = this.corrigirUrlYoutube(this.musicas[i]);
     }
   }
-  corrigirUrlYoutube(video) {
-    return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.youtube}?ecver=2`);
+  corrigirUrlYoutube(musica) {
+    return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${musica.youtube}?ecver=2`);
   }
 }
