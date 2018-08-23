@@ -11,7 +11,7 @@ export class MusicasComponent implements OnInit {
 
   panelOpenState: boolean;
   musicas: Musicas[] = [];
-  musicaAtual: String;
+  musicaAtual: String = '';
   musicasFiltradas: Musicas[] = [];
   constructor(private sanitazer: DomSanitizer) { }
 
