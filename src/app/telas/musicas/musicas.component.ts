@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Musicas } from './musicas.model';
 
 @Component({
   selector: 'app-musicas',
@@ -9,7 +10,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class MusicasComponent implements OnInit {
 
   panelOpenState: boolean;
-  musicas: any[];
+  musicas: Musicas[] = [];
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
