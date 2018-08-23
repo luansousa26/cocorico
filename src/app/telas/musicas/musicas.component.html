@@ -1,3 +1,20 @@
+<div id="header-musicas" class="row">
+  <div id="titulo" class="col-md-6 col-sm-12">
+    <span>Músicas do Cocoricó</span>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <mat-form-field class="tamanhoCampo">
+      <input matInput (click)="filtro()" placeholder="Filtro de músicas" [(ngModel)]="musicaAtual" name="musicaSelecionada"
+        (ngModelChange)="filtro()" aria-label="Linguagem" [matAutocomplete]="auto">
+      <mat-autocomplete (optionSelected)="opcaoSelecionada($event)" #auto="matAutocomplete">
+        <mat-option *ngFor="let musica of musicas" [value]="musica.titulo">
+          <span>{{musica.titulo}}</span>
+          <small>&nbsp;&nbsp;&nbsp;<img id="small-icon" src="{{musica.icone}}"></small>
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+</div>
 <div class="musicas-container">
   <mat-accordion>
     <mat-expansion-panel align="center" *ngFor="let musica of musicas" (opened)="panelOpenState = true" (closed)="panelOpenState = false" align="center">

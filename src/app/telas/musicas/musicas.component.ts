@@ -11,6 +11,8 @@ export class MusicasComponent implements OnInit {
 
   panelOpenState: boolean;
   musicas: Musicas[] = [];
+  musicaAtual: String;
+  musicasFiltradas: Musicas[] = [];
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -52,5 +54,26 @@ export class MusicasComponent implements OnInit {
   }
   corrigirUrlYoutube(musica) {
     return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${musica.youtube}?ecver=2`);
+  }
+
+  filtro() {
+    this.musicasFiltradas = JSON.parse(JSON.stringify(this.musicas));
+    if (this.musicaAtual === '') {
+      // this.paginarVideos(4);
+    }
+    if (this.musicaAtual.length > 1) {
+      this.musicasFiltradas = this.filtrar(this.musicas);
+    }
+  }
+  filtrar(values) {
+    return values.filter(musica => musica.titulo.toLowerCase().includes(this.musicaAtual));
+  }
+  opcaoSelecionada(musicaSelecionada) {
+    for (const musica in this.musicas) {
+      if (this.musicas[musica].titulo === musicaSelecionada.option.value) {
+        this.musicasFiltradas = [this.musicas[musica]];
+        break;
+      }
+    }
   }
 }
