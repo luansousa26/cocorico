@@ -40,3 +40,7 @@
     </mat-expansion-panel>
   </mat-accordion>
 </div>
+<div [hidden]="musicaAtual !== ''">
+  <mat-paginator [length]="musicas.length" [pageSize]="7" (page)="paginar($event)">
+  </mat-paginator>
+</div>

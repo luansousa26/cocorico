@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Musicas } from './musicas.model';
+import { MatPaginator } from '@angular/material';
 
 @Component({
   selector: 'app-musicas',
@@ -13,6 +14,8 @@ export class MusicasComponent implements OnInit {
   musicas: Musicas[] = [];
   musicaAtual: String = '';
   musicasFiltradas: Musicas[] = [];
+  paginaAnterior = 0;
+  controlador = 7;
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -45,6 +48,7 @@ export class MusicasComponent implements OnInit {
       }*/
     ];
     this.getSafeUrls();
+    this.paginarMusicas(this.controlador);
   }
 
   getSafeUrls() {
@@ -59,7 +63,7 @@ export class MusicasComponent implements OnInit {
   filtro() {
     this.musicasFiltradas = JSON.parse(JSON.stringify(this.musicas));
     if (this.musicaAtual === '') {
-      // this.paginarVideos(4);
+        this.paginarMusicas(7);
     }
     if (this.musicaAtual.length > 1) {
       this.musicasFiltradas = this.filtrar(this.musicas);
@@ -74,6 +78,30 @@ export class MusicasComponent implements OnInit {
         this.musicasFiltradas = [this.musicas[musica]];
         break;
       }
+    }
+  }
+
+  paginar(event: MatPaginator) {
+    if (event !== undefined) {
+      if (event.pageIndex < this.paginaAnterior) {
+        this.controlador -= 7;
+      } else {
+        this.controlador += 7;
+      }
+      this.paginaAnterior = event.pageIndex;
+    }
+    this.paginarMusicas(this.controlador);
+  }
+
+  paginarMusicas(controlador: number) {
+    let inicial = controlador - 7;
+    let num = 0;
+    this.musicasFiltradas = [];
+    for (inicial; inicial < controlador; inicial++ , num++) {
+      if (this.musicas[inicial] === undefined) {
+        break;
+      }
+      this.musicasFiltradas[num] = this.musicas[inicial];
     }
   }
 }
