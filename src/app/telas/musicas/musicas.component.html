@@ -7,7 +7,7 @@
       <input matInput (click)="filtro()" placeholder="Filtro de músicas" [(ngModel)]="musicaAtual" name="musicaSelecionada"
         (ngModelChange)="filtro()" aria-label="Linguagem" [matAutocomplete]="auto">
       <mat-autocomplete (optionSelected)="opcaoSelecionada($event)" #auto="matAutocomplete">
-        <mat-option *ngFor="let musica of musicas" [value]="musica.titulo">
+        <mat-option *ngFor="let musica of musicasFiltradas" [value]="musica.titulo">
           <span>{{musica.titulo}}</span>
           <small>&nbsp;&nbsp;&nbsp;<img id="small-icon" src="{{musica.icone}}"></small>
         </mat-option>
