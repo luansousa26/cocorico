@@ -1,6 +1,9 @@
 #content-video{
     width: 50%;
 }
+.musicas-container{
+    background: #F6F6F6;
+}
 @media only screen and (max-width: 900px) {
     #content-video{
         width: 100%;
@@ -27,6 +30,7 @@ img{
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+    background: #F6F6F6;
 }
 #titulo{
     color: #343434;
