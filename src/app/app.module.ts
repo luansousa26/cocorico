@@ -15,6 +15,7 @@ import { AppRoutingModule } from './rotas/app-routing.module';
 import { HomeComponent } from './telas/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { MusicasComponent } from './telas/musicas/musicas.component';
+import { SobreComponent } from './telas/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MusicasComponent } from './telas/musicas/musicas.component';
     DetalhadoComponent,
     VideosComponent,
     HomeComponent,
-    MusicasComponent
+    MusicasComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
