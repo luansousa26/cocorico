@@ -7,4 +7,5 @@ export class Musicas {
     icone?: String;
     safeUrl?: SafeResourceUrl;
     musica?: String;
+    selected?: boolean;
 }

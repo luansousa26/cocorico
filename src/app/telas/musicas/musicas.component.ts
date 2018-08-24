@@ -22,33 +22,43 @@ export class MusicasComponent implements OnInit {
     this.musicas = [
       {
         // tslint:disable-next-line:max-line-length
-        id: 1, titulo: 'A Avó a Bordar', descricao: 'A turma do paiol canta a música "A Avó a Bordar".', youtube: 'lLg8ClXv-Vs', icone: './assets/personagens/zaza.jpg', safeUrl: '',
+        id: 1, titulo: 'A Avó a Bordar', descricao: 'A turma do paiol canta a música "A Avó a Bordar".', youtube: 'lLg8ClXv-Vs', icone: './assets/personagens/zaza.jpg', safeUrl: '', selected: false,
         // tslint:disable-next-line:max-line-length
         musica: '<p>Estava a Avó no seu lugar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p>'
       },
-     /* {
+      {
         // tslint:disable-next-line:max-line-length
-        id: 2, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+        id: 2, titulo: 'Sapo Martelo', descricao: 'A turma do paiol canta a música "Sapo Martelo".', youtube: 'XHn2x6-U_n8', icone: './assets/personagens/zaza.jpg', selected: false,
+        // tslint:disable-next-line:max-line-length
+        musica: '<p>Estava a Avó no seu lugar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p>'
       },
       {
         // tslint:disable-next-line:max-line-length
-        id: 3, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+        id: 3, titulo: 'Vitamina Tutti-Frutti', descricao: 'A turma do paiol canta a música "Vitamina Tutti-Frutti".', youtube: 'pBcRClDj76w', icone: './assets/personagens/julio2.jpg', selected: false,
+        // tslint:disable-next-line:max-line-length
+        musica: '<p>Estava a Avó no seu lugar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p>'
       },
       {
         // tslint:disable-next-line:max-line-length
-        id: 4, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+        id: 4, titulo: 'Tatu Bolinha', descricao: 'A turma do paiol canta a música "Tatu Bolinha".', youtube: 'ObVoirL1g2Y', icone: './assets/personagens/astolfo.jpg', selected: false,
+        // tslint:disable-next-line:max-line-length
+      musica: '<p>Estava a Avó no seu lugar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p>'
       },
       {
         // tslint:disable-next-line:max-line-length
-        id: 5, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
+        id: 5, titulo: 'Piquenique no Quintal', descricao: 'A turma do paiol canta a música "Piquenique no Quintal".', youtube: '3gnz4XkqmWI', icone: './assets/personagens/lola.jpg', selected: false,
+      // tslint:disable-next-line:max-line-length
+      musica: '<p>Estava a Avó no seu lugar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p>'
       },
       {
         // tslint:disable-next-line:max-line-length
-        id: 6, titulo: 'Já falei mais de mil vezes', descricao: 'teste.', youtube: 'IbnedIp7jPc', icone: './assets/personagens/zaza.jpg'
-      }*/
+        id: 6, titulo: 'Tu Tu Tu Tupi', descricao: 'A turma do paiol canta a música "Tu Tu Tu Tupi".', youtube: '1EMo-MeIKzQ', icone: './assets/personagens/oriba.jpg', selected: false,
+        // tslint:disable-next-line:max-line-length
+        musica: '<p>Estava a Avó no seu lugar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p><p>veio a mosca lhe cutucar.</p>'
+      }
     ];
-    this.getSafeUrls();
     this.paginarMusicas(this.controlador);
+    this.getSafeUrls();
   }
 
   getSafeUrls() {
@@ -103,5 +113,13 @@ export class MusicasComponent implements OnInit {
       }
       this.musicasFiltradas[num] = this.musicas[inicial];
     }
+  }
+
+  selecionarMusica(musica: Musicas) {
+    musica.selected = true;
+  }
+
+  desmarcarMusica(musica: Musicas) {
+    musica.selected = false;
   }
 }
