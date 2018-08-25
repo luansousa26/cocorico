@@ -16,6 +16,7 @@ export class MusicasComponent implements OnInit {
   musicasFiltradas: Musicas[] = [];
   paginaAnterior = 0;
   controlador = 7;
+  musicasParaFiltro: Musicas[] = [];
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -71,11 +72,13 @@ export class MusicasComponent implements OnInit {
   }
 
   filtro() {
+    this.musicasParaFiltro = JSON.parse(JSON.stringify(this.musicas));
     if (this.musicaAtual === '') {
         this.paginarMusicas(7);
     }
     if (this.musicaAtual.length > 1) {
       this.musicasFiltradas = this.filtrar(this.musicas);
+      this.musicasParaFiltro = this.filtrar(this.musicas);
     }
   }
   filtrar(values) {
