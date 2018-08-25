@@ -71,7 +71,6 @@ export class MusicasComponent implements OnInit {
   }
 
   filtro() {
-    this.musicasFiltradas = JSON.parse(JSON.stringify(this.musicas));
     if (this.musicaAtual === '') {
         this.paginarMusicas(7);
     }
