@@ -119,7 +119,6 @@ export class VideosComponent implements OnInit {
     return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.youtube}?ecver=2`);
   }
   filtro() {
-
     if (this.episodioAtual === '') {
       this.paginarVideos(4);
     }
