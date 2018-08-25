@@ -1,3 +1,4 @@
+import { SobreComponent } from './../telas/sobre/sobre.component';
 import { VideosComponent } from './../telas/videos/videos.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -8,6 +9,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'episodios', component: VideosComponent },
   { path: 'musicas', component: MusicasComponent },
+  { path: 'sobre', component: SobreComponent },
   { path: '**', component: HomeComponent},
 ];
 @NgModule({
