@@ -15,6 +15,8 @@ export class VideosComponent implements OnInit {
   episodioAtual: String = '';
   controlador = 4;
   paginaAnterior = 0;
+  controleFiltro = true;
+  videosParaFiltro: Videos[] = [];
   constructor(private sanitazer: DomSanitizer) { }
 
   ngOnInit() {
@@ -119,11 +121,16 @@ export class VideosComponent implements OnInit {
     return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.youtube}?ecver=2`);
   }
   filtro() {
+    this.videosParaFiltro = JSON.parse(JSON.stringify(this.videos));
+    for (let i = 0; i < this.videosFiltrados.length; i++) {
+      this.videosParaFiltro[i].safeUrl = this.sanitazer.bypassSecurityTrustResourceUrl(`${this.videosParaFiltro[i].safeUrl}`);
+    }
     if (this.episodioAtual === '') {
-      this.paginarVideos(4);
+        this.paginarVideos(4);
     }
     if (this.episodioAtual.length > 1) {
       this.videosFiltrados = this.filtrar(this.videos);
+      this.videosParaFiltro = this.filtrar(this.videos);
     }
   }
   filtrar(values) {
