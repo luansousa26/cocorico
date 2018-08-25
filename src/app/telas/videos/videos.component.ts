@@ -119,7 +119,7 @@ export class VideosComponent implements OnInit {
     return this.sanitazer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${video.youtube}?ecver=2`);
   }
   filtro() {
-    this.videosFiltrados = JSON.parse(JSON.stringify(this.videos));
+
     if (this.episodioAtual === '') {
       this.paginarVideos(4);
     }
