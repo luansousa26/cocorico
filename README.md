@@ -2,6 +2,10 @@
 
 ## https://luansousa26.github.io/cocorico/
 
+## Informações:
+
+Projeto com o intuito de ajudar a disseminar a cultura e bons programas para crianças, incluindo vídeos e músicas do Cocoricó no próprio site, assim não havendo necessidade da criança acessar diretamente o Youtube onde o conteúdo é maior e as vezes impróprio para a idade desta.
+
 ## Tecnologias:
 
 * Angular 6. :bird:
@@ -21,6 +25,10 @@
 ![image](https://user-images.githubusercontent.com/33549496/44303971-3732e580-a325-11e8-969e-2c5752cbff21.png)
 ![image](https://user-images.githubusercontent.com/33549496/44618959-2cf97580-a856-11e8-9cb3-f00561115246.png)
 ![image](https://user-images.githubusercontent.com/33549496/44618967-426e9f80-a856-11e8-9eae-a8eeea975a87.png)
+![image](https://user-images.githubusercontent.com/33549496/44629390-05251300-a925-11e8-87a4-1f0039b53cab.png)
+![image](https://user-images.githubusercontent.com/33549496/44629401-284fc280-a925-11e8-9fc4-f8d5022621ff.png)
+
+
 
 
 
