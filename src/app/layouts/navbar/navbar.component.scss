@@ -1,4 +1,4 @@
-$cor-menu-animacao: #8840a5;
+$cor-menu-animacao: rgb(232, 248, 4);
 
 .fixed{
     background: #28a745;
@@ -15,9 +15,6 @@ img{
     display: inline-block;
     cursor: pointer;
     transition: color 3s;
-}
-.itens-navbar:hover{
-    color:$cor-menu-animacao;
 }
 .itens-navbar:before{
     content: '';
