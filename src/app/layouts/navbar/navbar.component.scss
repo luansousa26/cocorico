@@ -6,15 +6,90 @@
 img{
     height: 50px;
 }
-.itens-navbar:hover{
-    font-size: 18px;
-    color: white;
+
+.itens-navbar{
+    position: relative;
+    padding: 7px;
+    display: inline-block;
+}
+.itens-navbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
     background: transparent;
-    border: solid 2px;
-    border-color: white;
-    padding:10px;
-    cursor: pointer;
-   
+    border: 2px solid transparent;
+}
+.itens-navbar:hover:before{
+    animation: animate 1s linear forwards;
+}
+@keyframes animate {
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: #e74c3c;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color: #e74c3c;
+        border-right-color: #e74c3c;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: #e74c3c;
+        border-right-color: #e74c3c;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.itens-navbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.itens-navbar:hover:after{
+    animation: animate2 1s linear forwards;
+}
+@keyframes animate2 {
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #e74c3c;
+    }
+    50%{
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #e74c3c;
+        border-left-color: #e74c3c;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #e74c3c;
+        border-left-color: #e74c3c;
+    }
 }
 .itens-navbar{
     color: rgb(232, 248, 4);
