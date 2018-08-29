@@ -1,3 +1,5 @@
+$cor-menu-animacao: #8b60f8;
+
 .fixed{
     background: #28a745;
     position: fixed;
@@ -11,6 +13,7 @@ img{
     position: relative;
     padding: 7px;
     display: inline-block;
+    cursor: pointer;
 }
 .itens-navbar:before{
     content: '';
@@ -29,7 +32,7 @@ img{
     0%{
         width: 0;
         height: 0;
-        border-top-color: #e74c3c;
+        border-top-color: $cor-menu-animacao;
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-color: transparent;
@@ -37,16 +40,16 @@ img{
     50%{
         width: 100%;
         height: 0;
-        border-top-color: #e74c3c;
-        border-right-color: #e74c3c;
+        border-top-color: $cor-menu-animacao;
+        border-right-color: $cor-menu-animacao;
         border-bottom-color: transparent;
         border-left-color: transparent;
     }
     100%{
         width: 100%;
         height: 100%;
-        border-top-color: #e74c3c;
-        border-right-color: #e74c3c;
+        border-top-color: $cor-menu-animacao;
+        border-right-color: $cor-menu-animacao;
         border-bottom-color: transparent;
         border-left-color: transparent;
     }
@@ -72,23 +75,23 @@ img{
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
-        border-left-color: #e74c3c;
+        border-left-color: $cor-menu-animacao;
     }
     50%{
         width: 0;
         height: 100%;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-color: #e74c3c;
-        border-left-color: #e74c3c;
+        border-bottom-color: $cor-menu-animacao;
+        border-left-color: $cor-menu-animacao;
     }
     100%{
         width: 100%;
         height: 100%;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-color: #e74c3c;
-        border-left-color: #e74c3c;
+        border-bottom-color: $cor-menu-animacao;
+        border-left-color: $cor-menu-animacao;
     }
 }
 .itens-navbar{
