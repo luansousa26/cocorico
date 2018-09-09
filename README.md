@@ -4,7 +4,7 @@
 
 ## Informações:
 
-Projeto com o intuito de ajudar a disseminar a cultura e bons programas para crianças, incluindo vídeos e músicas do Cocoricó no próprio site, assim não havendo necessidade da criança acessar diretamente o Youtube onde o conteúdo é maior e as vezes impróprio para a idade desta.
+Projeto com o intuito de ajudar a disseminar a cultura e bons programas de TV para crianças, incluindo vídeos e músicas do Cocoricó no próprio site, assim não havendo necessidade da criança acessar diretamente o Youtube onde o conteúdo é maior e as vezes impróprio para a idade desta.
 
 ## Tecnologias:
 
